@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>채팅 앱</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="chat-container">
+        <div class="profile">
+            <label for="username">이름:</label>
+            <input type="text" id="username" placeholder="이름을 입력하세요">
+            <label for="profile-picture">프로필 사진 URL:</label>
+            <input type="text" id="profile-picture" placeholder="프로필 사진 URL을 입력하세요">
+            <button onclick="joinChat()">채팅방 입장</button>
+        </div>
+
+        <div class="chat-box" id="chat-box">
+            <div id="messages"></div>
+            <div class="message-input">
+                <input type="text" id="message" placeholder="메시지를 입력하세요">
+                <button onclick="sendMessage()">전송</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
